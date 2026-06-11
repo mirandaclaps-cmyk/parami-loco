@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial del Clásico Rosarino</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            line-height: 1.6;
+
+            background: repeating-linear-gradient(
+                90deg,
+                #0047AB 0px,
+                #0047AB 100px,
+                #FFD700 100px,
+                #FFD700 200px
+            );
+
+            min-height: 100vh;
+        }
+
+        header {
+            background: #0047AB;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 10px solid #FFD700;
+            border-bottom: 10px solid #FFD700;
+        }
+
+        h1 {
+            font-size: clamp(1.4rem, 6vw, 2.2rem);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.96);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .imagen-noticia {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #0047AB;
+            margin-bottom: 15px;
+            border-left: 6px solid #FFD700;
+            padding-left: 10px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: clamp(1rem, 3vw, 1.1rem);
+        }
+
+        .btn-huevos {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: #0047AB;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        @keyframes temblar {
+            0% {
+                transform: scale(1.1) translateX(0);
+            }
+
+            25% {
+                transform: scale(1.1) translateX(-4px);
+            }
+
+            50% {
+                transform: scale(1.1) translateX(4px);
+            }
+
+            75% {
+                transform: scale(1.1) translateX(-4px);
+            }
+
+            100% {
+                transform: scale(1.1) translateX(0);
+            }
+        }
+
+        .btn-huevos:hover {
+            background-color: #0047AB;
+            color: #FFD700;
+            box-shadow: 0 0 15px rgba(0, 71, 171, 0.5);
+            animation: temblar 0.3s infinite;
+        }
+
+        footer {
+            background: #0047AB;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 5px solid #FFD700;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                background: repeating-linear-gradient(
+                    90deg,
+                    #0047AB 0px,
+                    #0047AB 40px,
+                    #FFD700 40px,
+                    #FFD700 80px
+                );
+            }
+
+            header {
+                padding: 20px 15px;
+            }
+
+            .container {
+                width: 90%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                line-height: 1.7;
+            }
+
+            .btn-huevos {
+                width: 100%;
+                text-align: center;
+                padding: 18px;
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            LA CANTIDAD DE VECES QUE ROSARIO CENTRAL SE IMPUSO EN EL CLÁSICO ROSARINO
+        </h1>
+    </header>
+
+    <div class="container">
+
+        <img src="rc.jpg" alt="Clásico Rosarino" class="imagen-noticia">
+
+        <h2>El Canalla mantiene una amplia ventaja histórica</h2>
+
+        <p>
+            Rosario Central le lleva a Newell's Old Boys una diferencia de 22 partidos
+            en el historial oficial del clásico rosarino.
+        </p>
+
+        <p>
+            Ambos clubes se han enfrentado en 281 ocasiones, con estos números:
+        </p>
+
+        <p>
+            <strong>Rosario Central:</strong> 99 triunfos.<br>
+            <strong>Newell's Old Boys:</strong> 77 triunfos.<br>
+            <strong>Empates:</strong> 103 partidos.
+        </p>
+
+        <p>
+            (Nota: Dos partidos se dieron por perdidos a ambos clubes por incidentes,
+            lo que explica la suma de victorias).
+        </p>
+
+        <p>
+            A nivel local, la ventaja de Rosario Central se ha estirado en el último
+            tiempo. De hecho, Newell's no logra ganarle a su eterno rival en condición
+            de local desde el 2 de noviembre de 2008.
+        </p>
+
+        <a href="river.html" class="btn-huevos">
+            APRETAME SI TENÉS HUEVOS
+        </a>
+
+    </div>
+
+    <footer>
+        Historial del Clásico Rosarino
+    </footer>
+
+</body>
+
+</html>
